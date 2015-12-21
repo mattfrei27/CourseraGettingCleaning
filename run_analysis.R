@@ -48,10 +48,9 @@ out3 <- merge(mean.or.std,activities)
 out4 <- out3
 cols <- names(out4)
 cols <- gsub('\\.','',cols)
-cols <- gsub('^f','Fourier',cols)
-cols <- gsub('^t','Trans',cols)
-cols <- gsub('mean','Mean',cols)
-cols <- gsub('std','Std',cols)
+cols <- gsub('^f','frequency',cols)
+cols <- gsub('^t','trans',cols)
+cols <- tolower(cols)
 names(out4) <- cols
 
 #### Step 5 ####

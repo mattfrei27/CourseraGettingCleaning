@@ -18,5 +18,5 @@ Explanation of analysis performed:
 * Step 1: Combined training and test data sets as well as the subject and activity information
 * Step 2: Select only the measurement columns from step1 that contain either mean or standard deviation measures.
 * Step 3: Add a additional column that stores the description of eac of the numeric activity codes.
-* Step 4: Modify original variables names by removing periods, replacing leading 'F' characters with 'Fourier', replacing leading 'T' characters with 'Trans', and uppercasing Mean and Std.
+* Step 4: Modify original variables names by removing periods, replacing leading 'F' characters with 'frequency', replacing leading 'T' characters with 'trans', and making all variable names lowercase.
 * Step 5: Group by subject and activity and take the mean of all measurement columns present in step 4.
